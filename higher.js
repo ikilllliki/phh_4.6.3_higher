@@ -6,9 +6,10 @@ function myHigherFunction () {
 }
 
 // （普通の）関数
-function outsideFunction () {
-    console.log ('outsideFunction');
+function outsideFunction (value) {
+    console.log ('value :' + value);
 }
 
-let returnValue = myHigherFunction ();
-returnValue();
+// let returnValue = myHigherFunction ();
+// returnValue ('引数だよ');
+myHigherFunction () ('引数だよ');
